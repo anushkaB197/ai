@@ -1,0 +1,24 @@
+bool solveNQ()
+{
+int board[N][N] = { { 0, 0, 0, 0 },
+{ 0, 0, 0, 0 },
+{ 0, 0, 0, 0 },
+{ 0, 0, 0, 0 } };
+if (solveNQUtil(board, 0) == false) {
+printf("Solution does not exist");
+return false;
+}
+printSolution(board);
+return true;
+}
+// driver program to test above function
+int main()
+{
+solveNQ();
+return 0;
+}
+Output:The 1 values indicate placements of queens
+0 0 1 0
+1 0 0 0
+0 0 0 1
+0 1 0 0
